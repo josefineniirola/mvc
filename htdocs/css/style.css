@@ -1,0 +1,202 @@
+body {
+    background-color: #f1c40f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-y: scroll;
+    width: 80%;
+    margin: 8px auto;
+}
+
+main {
+    background-color: #fff;
+    min-height: 30em;
+    box-shadow: 0px 5px 0px #dedede;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.namn {
+    color: #fff;
+    width: 10%;
+    border-bottom: 4px solid #fff;
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 5px 0px #dedede;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+nav ul li a:hover {
+    color: #555;
+}
+
+h1 {
+    text-align: center;
+    color: #aaa;
+}
+
+p {
+    text-align: center;
+}
+
+
+/* SHIFT EFFECT */
+nav.shift ul li a {
+    position:relative;
+    z-index: 1;
+}
+
+nav.shift ul li a:hover {
+    color: #91640f;
+}
+
+nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #f1c40f;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.spela-igen {
+    border-radius: 2em;
+    color: #fff;
+    background-color: #4caf50;
+    padding: 1.5em;
+    display: block;
+    margin: auto;
+    width: 10%;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.stats {
+    color: #000;
+    padding: 1.5em;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.total {
+    font-size: 1.5em;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dice {
+    font-weight: 800;
+    color: #f1c40f;
+    font-size: 4em;
+}
+
+footer {
+    display: flex;
+    min-height: 4em;
+    justify-content: center;
+}
+
+footer a {
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background-color: #f1c40f;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+footer a:hover {
+    color: #f1c40f;
+    background-color: #fff;
+    box-shadow: 0px 5px 0px #dedede;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button-dice {
+    display: block;
+    width: 10%;
+    margin: auto;
+    text-align: center;
+}
+
+.win {
+    padding: 1em;
+    border-top: 2px solid #f1c40f;
+}
+
+
+input[type=submit] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 1em;
+    padding: 1em;
+    background-color: #f1c40f;
+    border: none;
+    color: #796207;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0.4em;
+}
+
+.dice-utf8 .dice-1::after { content: "\2680"; }
+.dice-utf8 .dice-2::after { content: "\2681"; }
+.dice-utf8 .dice-3::after { content: "\2682"; }
+.dice-utf8 .dice-4::after { content: "\2683"; }
+.dice-utf8 .dice-5::after { content: "\2684"; }
+.dice-utf8 .dice-6::after { content: "\2685"; }
+
+.dice-utf8 {
+    font-size: 4em;
+    color: #000; 
+}
+
+i {
+    font-style: normal;
+}

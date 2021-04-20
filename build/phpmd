@@ -1,0 +1,4 @@
+C:\Users\Bajspotatis\dbwebb-kurser\mvc\me\game\src\Router\Router.php:21	The method dispatch() has a Cyclomatic Complexity of 31. The configured cyclomatic complexity threshold is 10.
+C:\Users\Bajspotatis\dbwebb-kurser\mvc\me\game\src\Router\Router.php:21	The method dispatch() has 125 lines of code. Current threshold is set to 100. Avoid really long methods.
+C:\Users\Bajspotatis\dbwebb-kurser\mvc\me\game\src\Router\Router.php:75	Missing class import via use statement (line '75', column '29').
+C:\Users\Bajspotatis\dbwebb-kurser\mvc\me\game\src\Dice\Game.php	-	Unexpected token: }, line: 10, col: 1, file: C:\Users\Bajspotatis\dbwebb-kurser\mvc\me\game\src\Dice\Game.php.
